@@ -25,9 +25,10 @@ wrist exercises across clinic and home settings.
 
 | Team member | Registration number | Email |
 | --- | --- | --- |
-| R.G.S.T.Weerasekara | E/22/419 | [e22419@eng.pdn.ac.lk](mailto:e22419@eng.pdn.ac.lk) |
 | K.H.D.M.Bimsara | E/22/052 | [e22052@eng.pdn.ac.lk](mailto:e22052@eng.pdn.ac.lk) |
+| R.G.S.T.Weerasekara | E/22/419 | [e22419@eng.pdn.ac.lk](mailto:e22419@eng.pdn.ac.lk) |
 | M.M.T.Cooray | E/22/058 | [e22058@eng.pdn.ac.lk](mailto:e22058@eng.pdn.ac.lk) |
+| S.I.Gunawardhana | E/22/127 | [e22127@eng.pdn.ac.lk](mailto:e22058@eng.pdn.ac.lk) |
 
 These details are taken from the repository's developer README. The separate
 project metadata file still contains template entries and awaits confirmation
