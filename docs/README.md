@@ -5,34 +5,33 @@ repository-name: e22-3yp-Modu-Rehab-Home
 title: ModuRehab Home
 ---
 
-# ModuRehab Home
+# ModuRehab Home — Modular Upper-Limb Rehabilitation Platform
 
-**An AI-Enabled, Modular Upper-Limb Rehabilitation Platform for Clinic-to-Home Therapy.**
+An AI-enabled university Cyber Physical Systems project for clinic-to-home
+elbow and wrist rehabilitation. The proposed platform combines modular
+attachments, ESP32-based sensing, BMI160 motion tracking, surface EMG,
+load-cell force measurement, and joint encoders with planned session monitoring
+and movement-quality feedback. Repository foundations and basic Serial firmware
+are prepared; sensor integration, applications, and AI capabilities remain
+planned. This development prototype is not a clinically validated medical device.
 
-A university Cyber Physical Systems project exploring how modular rehabilitation
-hardware, motion and muscle sensing, and software feedback can support elbow and
-wrist exercises across clinic and home settings.
+---
 
-> **Development prototype:** repository structure and initial ESP32 Serial
-> firmware are prepared. Sensor integration, rehabilitation applications, and
-> AI capabilities are planned. This is not a clinically validated medical device.
+## Team
+
+- E/22/052, K.H.D.M.Bimsara, [email](mailto:e22052@eng.pdn.ac.lk)
+- E/22/419, R.G.S.T.Weerasekara, [email](mailto:e22419@eng.pdn.ac.lk)
+- E/22/058, M.M.T.Cooray, [email](mailto:e22058@eng.pdn.ac.lk)
+- E/22/127, S.I.Gunawardhana, [email](mailto:e22127@eng.pdn.ac.lk)
+
+The separate project metadata file still contains template entries and awaits
+confirmation and synchronization. **Supervisors: details to be confirmed.**
+
+---
 
 [Introduction](#introduction) · [Objectives](#aim-and-objectives) ·
 [Architecture](#solution-architecture) · [Roadmap](#development-roadmap) ·
 [Budget](#detailed-budget) · [Safety](#limitations-and-safety)
-
-## Team
-
-| Team member | Registration number | Email |
-| --- | --- | --- |
-| K.H.D.M.Bimsara | E/22/052 | [e22052@eng.pdn.ac.lk](mailto:e22052@eng.pdn.ac.lk) |
-| R.G.S.T.Weerasekara | E/22/419 | [e22419@eng.pdn.ac.lk](mailto:e22419@eng.pdn.ac.lk) |
-| M.M.T.Cooray | E/22/058 | [e22058@eng.pdn.ac.lk](mailto:e22058@eng.pdn.ac.lk) |
-| S.I.Gunawardhana | E/22/127 | [e22127@eng.pdn.ac.lk](mailto:e22058@eng.pdn.ac.lk) |
-
-These details are taken from the repository's developer README. The separate
-project metadata file still contains template entries and awaits confirmation
-and synchronization. **Supervisors: details to be confirmed.**
 
 ## Introduction
 
