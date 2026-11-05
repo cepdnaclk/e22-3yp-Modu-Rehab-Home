@@ -276,6 +276,7 @@ independent safety mechanisms.
 | R.G.S.T.Weerasekara | E/22/419 | [e22419@eng.pdn.ac.lk](mailto:e22419@eng.pdn.ac.lk) |
 | K.H.D.M.Bimsara | E/22/052 | [e22052@eng.pdn.ac.lk](mailto:e22052@eng.pdn.ac.lk) |
 | M.M.T.Cooray | E/22/058 | [e22058@eng.pdn.ac.lk](mailto:e22058@eng.pdn.ac.lk) |
+| S.I.Gunawardhana | E/22/127 | [e22127@eng.pdn.ac.lk](mailto:e22058@eng.pdn.ac.lk) |
 
 Names are preserved from existing project documentation. Supervisor details and
 individual roles have not been confirmed. `docs/data/index.json` still contains
