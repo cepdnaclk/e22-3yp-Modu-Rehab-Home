@@ -5,7 +5,7 @@ repository-name: e22-3yp-Modu-Rehab-Home
 title: ModuRehab Home
 ---
 
-# ModuRehab Home — Modular Upper-Limb Rehabilitation Platform
+# ModuRehab Home - Modular Upper-Limb Rehabilitation Platform
 
 An AI-enabled university Cyber Physical Systems project for clinic-to-home
 elbow and wrist rehabilitation. The proposed platform combines modular
