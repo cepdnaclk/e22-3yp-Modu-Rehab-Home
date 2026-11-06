@@ -746,7 +746,7 @@ function App() {
           <div className="hero-copy">
             <div className="eyebrow">MODULAR REHABILITATION SYSTEM</div>
             <h1>
-              Exploring better
+              Engineering better
               <br />
               <span>recovery.</span>
             </h1>
