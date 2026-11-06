@@ -34,7 +34,7 @@ button { font: inherit; }
 header { position: absolute; z-index: 20; top: 0; left: 0; width: 100%; }
 .nav-shell { height: 84px; max-width: 1320px; margin: auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; }
 .logo { display: inline-flex; align-items: center; gap: 11px; font-size: 14px; font-weight: 800; letter-spacing: .12em; }
-.logo svg { width: 34px; height: 34px; }
+.logo .brand-icon { width: 42px; height: 42px; flex-shrink: 0; }
 .logo span span { color: var(--blue); }
 nav { display: flex; align-items: center; gap: 35px; font-size: 13px; font-weight: 600; }
 nav > a:not(.nav-cta) { color: #4a6176; transition: color .2s; }
@@ -216,7 +216,7 @@ nav > a:not(.nav-cta):hover { color: var(--blue); }
 .patient-card { background: #eaf3fa; }
 .patient-ui { padding: 18px; height: 390px; }
 .mobile-head { display: flex; justify-content: space-between; align-items: center; }
-.mobile-head .logo span { display: none; }.mobile-head .logo svg { width: 27px; }
+.mobile-head .logo span { display: none; }.mobile-head .logo .brand-icon { width: 30px; height: 30px; }
 .session-intro { margin-top: 21px; }
 .session-intro small { color: var(--blue); font-size: 7px; letter-spacing: .14em; font-weight: 700; }
 .session-intro h3 { font-size: 19px; margin: 5px 0 2px; }.session-intro p { color: #8798a7; font-size: 9px; }
@@ -497,9 +497,8 @@ footer > div { display: flex; justify-content: flex-end; gap: 24px; color: #7890
   footer > div { justify-content: center; }
 }
 
-/* Public prototype status stays visible without obscuring the exported hero. */
-.project-status { padding: 100px max(20px, calc((100vw - 1256px) / 2)) 18px; background: var(--soft-blue); color: var(--ink); font-size: 13px; line-height: 1.7; }
-.project-status + .hero { padding-top: 60px; }
+/* A compact status note complements the footer without interrupting the hero. */
+.project-status { padding: 28px max(20px, calc((100vw - 1256px) / 2)); background: var(--surface); color: var(--muted); border-bottom: 1px solid var(--line); font-size: 12px; line-height: 1.7; }
+.project-status strong { display: block; margin-bottom: 6px; color: var(--ink); font-size: 12px; }
 button:disabled { cursor: default; opacity: .65; }
-@media (max-width: 760px) { .project-status { padding-top: 88px; } .project-status + .hero { padding-top: 40px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } .reveal { opacity: 1; transform: none; } }

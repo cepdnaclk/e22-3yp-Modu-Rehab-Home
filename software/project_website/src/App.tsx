@@ -106,17 +106,7 @@ function Icon({ name, size = 20 }: { name: IconName; size?: number }) {
 function Logo() {
   return (
     <a href="#top" className="logo" aria-label="ModuRehab main page">
-      <svg viewBox="0 0 38 38" aria-hidden="true">
-        <rect x="2" y="2" width="34" height="34" rx="10" fill="#146EF5" />
-        <path
-          d="M10 25V13l9 5 9-5v12"
-          fill="none"
-          stroke="white"
-          strokeWidth="3.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+      <img className="brand-icon" src={asset("favicon.svg?v=modurehab-1")} alt="" width="42" height="42" />
       <span>
         MODU<span>REHAB</span>
       </span>
@@ -752,7 +742,6 @@ function App() {
       </header>
 
       <main>
-        <aside className="project-status" aria-label="Project implementation status"><strong>Development prototype.</strong> Only initial ESP32 Serial firmware is implemented. Device visuals, home-use scenes, sensor integration, offline guidance, and dashboard readings are illustrative proposals, not validated hardware or patient results. AI will not diagnose, prescribe treatment, or override independent safety controls.</aside>
         <section className="hero section">
           <div className="hero-copy">
             <div className="eyebrow">MODULAR REHABILITATION SYSTEM</div>
@@ -1293,6 +1282,10 @@ function App() {
             </div>
           </div>
         </section>
+        <aside className="project-status" aria-label="Project status and safety">
+          <strong>Research &amp; development</strong>
+          <p>Initial ESP32 Serial firmware is implemented; device renders and application screens illustrate planned functionality. This is not a clinically validated medical device. AI will not diagnose, prescribe treatment, or override independent safety controls.</p>
+        </aside>
       </main>
       <footer>
         <Logo />
