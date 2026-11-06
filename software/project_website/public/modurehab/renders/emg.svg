@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Surface EMG sensor technical render</title>
+  <desc id="desc">Three clinical electrodes connected to a compact red muscle signal acquisition board.</desc>
+  <defs>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#db4c4c"/><stop offset="1" stop-color="#8f1f2d"/></linearGradient>
+    <radialGradient id="pad"><stop stop-color="#eef3f5"/><stop offset=".72" stop-color="#c8d3d9"/><stop offset=".76" stop-color="#9aabb5"/><stop offset="1" stop-color="#e7edef"/></radialGradient>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#10283a" flood-opacity=".26"/></filter>
+  </defs>
+  <ellipse cx="500" cy="572" rx="315" ry="38" fill="#9bafbd" opacity=".2"/>
+  <g filter="url(#s)">
+    <g fill="none" stroke-linecap="round" stroke-width="16"><path d="M352 365C440 270 520 288 658 325" stroke="#eef3f6"/><path d="M354 370C455 405 518 386 658 355" stroke="#df4646"/><path d="M350 375C450 490 548 440 658 385" stroke="#202d37"/></g>
+    <g><circle cx="246" cy="300" r="88" fill="url(#pad)"/><circle cx="246" cy="300" r="24" fill="#9aa9b2" stroke="#667984" stroke-width="8"/>
+      <circle cx="284" cy="435" r="88" fill="url(#pad)"/><circle cx="284" cy="435" r="24" fill="#9aa9b2" stroke="#667984" stroke-width="8"/>
+      <circle cx="394" cy="515" r="88" fill="url(#pad)"/><circle cx="394" cy="515" r="24" fill="#9aa9b2" stroke="#667984" stroke-width="8"/></g>
+    <g transform="rotate(-5 730 350)">
+      <rect x="650" y="245" width="205" height="220" rx="18" fill="url(#red)" stroke="#6c1720" stroke-width="9"/>
+      <rect x="703" y="295" width="100" height="86" rx="8" fill="#17232c" stroke="#687a86" stroke-width="5"/>
+      <g fill="#d6ad45"><circle cx="683" cy="280" r="10"/><circle cx="683" cy="320" r="10"/><circle cx="683" cy="360" r="10"/><circle cx="683" cy="400" r="10"/></g>
+      <path d="M730 407h48m-24-24v48" stroke="#f2b9b9" stroke-width="8" stroke-linecap="round"/>
+      <rect x="824" y="310" width="45" height="90" rx="6" fill="#2c3d48"/>
+    </g>
+  </g>
+</svg>

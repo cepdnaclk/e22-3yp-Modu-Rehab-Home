@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">ESP32 acquisition board technical render</title>
+  <desc id="desc">Isometric blue printed circuit board with ESP32 module, microcontroller, and gold pin headers.</desc>
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1768a6"/><stop offset="1" stop-color="#083b69"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1f5f8"/><stop offset=".48" stop-color="#9eafbb"/><stop offset="1" stop-color="#60717e"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="28" stdDeviation="22" flood-color="#10283a" flood-opacity=".28"/></filter>
+  </defs>
+  <ellipse cx="500" cy="562" rx="285" ry="42" fill="#9bafbd" opacity=".22"/>
+  <g filter="url(#shadow)" transform="rotate(-9 500 350)">
+    <path d="M210 170 760 230 790 510 240 455Z" fill="url(#board)" stroke="#0c2e4c" stroke-width="10"/>
+    <path d="M240 455 790 510 777 531 228 476Z" fill="#082f52"/>
+    <g fill="#d8a737" stroke="#8d6715" stroke-width="3">
+      <circle cx="250" cy="210" r="13"/><circle cx="244" cy="250" r="13"/><circle cx="239" cy="290" r="13"/><circle cx="234" cy="330" r="13"/><circle cx="229" cy="370" r="13"/><circle cx="224" cy="410" r="13"/>
+      <circle cx="747" cy="265" r="13"/><circle cx="752" cy="305" r="13"/><circle cx="757" cy="345" r="13"/><circle cx="762" cy="385" r="13"/><circle cx="767" cy="425" r="13"/><circle cx="772" cy="465" r="13"/>
+    </g>
+    <rect x="316" y="214" width="275" height="180" rx="8" fill="url(#metal)" stroke="#687a86" stroke-width="6"/>
+    <path d="M344 242h145v18H344zm0 35h205v8H344zm0 23h205v8H344z" fill="#788994" opacity=".8"/>
+    <path d="M513 329h47v43h-47z" fill="#4c5f6b"/><path d="M530 339v23m12-23v23" stroke="#a8b6bf" stroke-width="5"/>
+    <rect x="625" y="286" width="86" height="92" rx="8" fill="#0b1822" stroke="#405665" stroke-width="5"/>
+    <circle cx="652" cy="315" r="8" fill="#d7b44a"/><circle cx="686" cy="315" r="8" fill="#d7b44a"/>
+    <g fill="none" stroke="#68b7e9" stroke-width="4" opacity=".7">
+      <path d="M279 275h28v68h-50"/><path d="M591 252h55v25"/><path d="M585 413h85v41h72"/><path d="M305 421h-45"/>
+    </g>
+    <g fill="#d8e7ef"><rect x="304" y="405" width="28" height="18" rx="3"/><rect x="607" y="414" width="28" height="18" rx="3"/><rect x="668" y="397" width="20" height="14" rx="3"/></g>
+  </g>
+</svg>

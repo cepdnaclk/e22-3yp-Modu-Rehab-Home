@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Modular elbow rehabilitation mechanism</title>
+  <desc id="desc">Isometric mechanical elbow module with adjustable aluminium links, rotary joint, and padded arm supports.</desc>
+  <defs>
+    <linearGradient id="al" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf2f5"/><stop offset=".45" stop-color="#a8b8c2"/><stop offset="1" stop-color="#667b89"/></linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#34536a"/><stop offset="1" stop-color="#0c2132"/></linearGradient>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="30" stdDeviation="22" flood-color="#10283a" flood-opacity=".3"/></filter>
+  </defs>
+  <ellipse cx="515" cy="572" rx="340" ry="45" fill="#9bafbd" opacity=".22"/>
+  <g filter="url(#s)">
+    <path d="m175 490 375-120 270 88-372 126Z" fill="#d9e3e9" stroke="#788d9a" stroke-width="9"/><path d="m175 490 273 94v28l-273-96Z" fill="#8fa3af"/>
+    <path d="M355 448 470 245" stroke="url(#dark)" stroke-width="54" stroke-linecap="round"/>
+    <circle cx="478" cy="235" r="88" fill="url(#al)" stroke="#657987" stroke-width="12"/><circle cx="478" cy="235" r="50" fill="#17334a" stroke="#0a1f30" stroke-width="10"/><circle cx="478" cy="235" r="18" fill="#146ef5"/>
+    <path d="M530 185 735 280" stroke="url(#dark)" stroke-width="50" stroke-linecap="round"/>
+    <path d="M548 202 716 280" stroke="#55748a" stroke-width="8" stroke-linecap="round"/>
+    <g transform="rotate(25 655 240)"><rect x="565" y="185" width="185" height="85" rx="24" fill="url(#al)" stroke="#6f8290" stroke-width="8"/><rect x="588" y="201" width="140" height="53" rx="20" fill="#dbe5ea"/></g>
+    <g transform="rotate(-59 395 370)"><rect x="305" y="325" width="180" height="88" rx="24" fill="url(#al)" stroke="#6f8290" stroke-width="8"/><rect x="328" y="342" width="134" height="54" rx="20" fill="#dbe5ea"/></g>
+    <path d="M320 455v-85" stroke="#146ef5" stroke-width="12" stroke-linecap="round"/><circle cx="320" cy="365" r="13" fill="#63b6f0"/>
+    <rect x="535" y="420" width="145" height="88" rx="14" fill="#0d263a" stroke="#49677d" stroke-width="8"/><path d="M560 467h20l12-23 18 43 13-28 15 8 17-20" fill="none" stroke="#62b9f3" stroke-width="6"/>
+  </g>
+</svg>

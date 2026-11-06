@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Modular wrist rehabilitation mechanism</title>
+  <desc id="desc">Compact wrist rotation module with ergonomic grip, circular bearing, and adjustable support rail.</desc>
+  <defs>
+    <linearGradient id="al" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2f6f8"/><stop offset=".42" stop-color="#a8b8c2"/><stop offset="1" stop-color="#627785"/></linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#365970"/><stop offset="1" stop-color="#0a2032"/></linearGradient>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="30" stdDeviation="22" flood-color="#10283a" flood-opacity=".3"/></filter>
+  </defs>
+  <ellipse cx="500" cy="565" rx="335" ry="44" fill="#9bafbd" opacity=".22"/>
+  <g filter="url(#s)">
+    <path d="m170 480 385-110 285 92-380 128Z" fill="#dae4e9" stroke="#788d9a" stroke-width="9"/><path d="m170 480 290 110v27L170 507Z" fill="#8fa3af"/>
+    <path d="M278 455 700 330" stroke="url(#rail)" stroke-width="58" stroke-linecap="round"/><path d="M304 438 682 327" stroke="#58778d" stroke-width="9" stroke-linecap="round"/>
+    <rect x="325" y="365" width="210" height="110" rx="28" fill="url(#al)" stroke="#6d8190" stroke-width="9"/><rect x="352" y="386" width="155" height="67" rx="25" fill="#dce6eb"/>
+    <circle cx="687" cy="330" r="112" fill="url(#al)" stroke="#647987" stroke-width="12"/><circle cx="687" cy="330" r="72" fill="#19374e" stroke="#0b2234" stroke-width="10"/><circle cx="687" cy="330" r="39" fill="#146ef5"/>
+    <g transform="rotate(-12 690 205)"><rect x="660" y="92" width="60" height="175" rx="29" fill="#146ef5" stroke="#0d56c4" stroke-width="8"/><path d="M675 120v118" stroke="#62b5ff" stroke-width="7" stroke-linecap="round"/></g>
+    <path d="M760 393c38 35 44 73 17 112" fill="none" stroke="#146ef5" stroke-width="12" stroke-linecap="round"/><path d="m774 493 3 23 20-12" fill="none" stroke="#146ef5" stroke-width="10" stroke-linecap="round"/>
+    <rect x="515" y="452" width="125" height="75" rx="12" fill="#0d263a" stroke="#49677d" stroke-width="7"/><circle cx="545" cy="489" r="9" fill="#52d29d"/><path d="M568 489h47" stroke="#62b9f3" stroke-width="6"/>
+  </g>
+</svg>

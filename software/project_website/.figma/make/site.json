@@ -1,0 +1,10 @@
+{
+  "description": "Explore a modular rehabilitation system designed for patients and therapists, with engineering visuals, prototype galleries, and realistic dashboard previews.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
