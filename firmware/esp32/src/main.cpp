@@ -1,55 +1,66 @@
 #include <Arduino.h>
+#include <Wire.h>
+#include <esp32-hal-rgb-led.h>
+
+#include "board_config.h"
 
 namespace {
-constexpr unsigned long kDiagnosticIntervalMs = 10000;
-unsigned long lastDiagnosticReportMs = 0;
+constexpr unsigned long kScanIntervalMs = 5000;
 
-void printHardwareReport() {
+void scanI2cBus() {
+  uint8_t deviceCount = 0;
+
   Serial.println();
-  Serial.println("ModuRehab ESP32-S3 Starting");
-  Serial.println("--------------------------------");
-  Serial.printf("Chip model: %s\n", ESP.getChipModel());
-  Serial.printf("Chip revision: %d\n", ESP.getChipRevision());
-  Serial.printf("CPU frequency: %lu MHz\n",
-                static_cast<unsigned long>(ESP.getCpuFreqMHz()));
-  Serial.printf("Flash size: %lu MB\n",
-                static_cast<unsigned long>(ESP.getFlashChipSize()) /
-                    (1024UL * 1024UL));
+  Serial.println("Scanning I2C bus...");
 
-  if (psramFound()) {
-    Serial.printf("PSRAM: detected (%lu MB)\n",
-                  static_cast<unsigned long>(ESP.getPsramSize()) /
-                      (1024UL * 1024UL));
-    Serial.printf("Free PSRAM: %lu bytes\n",
-                  static_cast<unsigned long>(ESP.getFreePsram()));
-  } else {
-    Serial.println("PSRAM: not detected");
+  for (uint8_t address = 1; address < 127; ++address) {
+    Wire.beginTransmission(address);
+    const uint8_t error = Wire.endTransmission();
+
+    if (error == 0) {
+      Serial.printf("I2C device found at 0x%02X\n", address);
+      ++deviceCount;
+    } else if (error == 4) {
+      Serial.printf("Unknown I2C error at 0x%02X\n", address);
+    }
   }
 
-  Serial.println("--------------------------------");
-  Serial.println("ESP32-S3 hardware check complete");
+  if (deviceCount == 0) {
+    Serial.println("No I2C devices found");
+  } else {
+    Serial.printf("Scan complete: %u device(s) found\n", deviceCount);
+  }
 }
 }  // namespace
 
 void setup() {
   Serial.begin(115200);
 
-  // Allow the native USB Serial connection a short time to become available.
   const unsigned long serialWaitStarted = millis();
   while (!Serial && millis() - serialWaitStarted < 3000) {
     delay(10);
   }
 
-  printHardwareReport();
-  lastDiagnosticReportMs = millis();
+  rgbLedWrite(modurehab::board::kRgbLedPin, 0, 0, 0);
+
+  Serial.println();
+  Serial.println("ModuRehab ESP32-S3 I2C Scanner");
+  Serial.printf("SDA: GPIO %u\n", modurehab::board::kI2cSdaPin);
+  Serial.printf("SCL: GPIO %u\n", modurehab::board::kI2cSclPin);
+  Serial.printf("Frequency: %lu Hz\n",
+                static_cast<unsigned long>(modurehab::board::kI2cFrequencyHz));
+
+  if (!Wire.begin(modurehab::board::kI2cSdaPin,
+                  modurehab::board::kI2cSclPin,
+                  modurehab::board::kI2cFrequencyHz)) {
+    Serial.println("Failed to initialize I2C controller");
+    return;
+  }
+
+  scanI2cBus();
 }
 
 void loop() {
-  Serial.println("ModuRehab ESP32-S3 is working!");
-  delay(1000);
-
-  if (millis() - lastDiagnosticReportMs >= kDiagnosticIntervalMs) {
-    printHardwareReport();
-    lastDiagnosticReportMs = millis();
-  }
+  delay(kScanIntervalMs);
+  scanI2cBus();
 }
